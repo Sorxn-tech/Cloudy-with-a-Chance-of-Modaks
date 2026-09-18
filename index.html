@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+
+  <title>Catch the Modak</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <main class="game-page">
+
+    <section class="phone-game">
+
+      <header class="hud">
+
+        <div class="brand">
+          <span class="brand-small">GANESH UTSAV</span>
+          <span class="brand-title">Catch the Modak</span>
+        </div>
+
+        <div class="stats">
+
+          <div class="stat-card">
+            <span>Score</span>
+            <strong id="score">0</strong>
+          </div>
+
+          <div class="stat-card">
+            <span>Best</span>
+            <strong id="highScore">0</strong>
+          </div>
+
+          <div class="stat-card">
+            <span>Lives</span>
+            <strong id="lives">3</strong>
+          </div>
+
+        </div>
+
+      </header>
+
+      <div id="gameArea">
+
+        <div class="decor top-glow"></div>
+
+        <div class="mandala mandala-left"></div>
+        <div class="mandala mandala-right"></div>
+
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+
+        <div id="player">
+
+          <div class="basket">
+
+            <div class="basket-rim"></div>
+
+            <div class="basket-body">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div id="startScreen" class="screen-overlay">
+
+          <div class="overlay-card">
+
+            <div class="hero-modak">
+              <div class="modak-shape large">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+            <p class="eyebrow">
+              GANPATI BAPPA MORYA
+            </p>
+
+            <h1>
+              Catch the<br />
+              <span>Modak</span>
+            </h1>
+
+            <p class="subtitle">
+              Move the basket and collect as many modaks as you can.
+            </p>
+
+            <button id="startButton">
+              Start Game
+            </button>
+
+            <p class="hint">
+              Swipe, move your mouse, or use ← →
+            </p>
+
+          </div>
+
+        </div>
+
+        <div
+          id="gameOverScreen"
+          class="screen-overlay hidden"
+        >
+
+          <div class="overlay-card game-over-card">
+
+            <p class="eyebrow">
+              ROUND COMPLETE
+            </p>
+
+            <h1>
+              Game Over
+            </h1>
+
+            <div class="result-grid">
+
+              <div>
+                <span>Score</span>
+                <strong id="finalScore">0</strong>
+              </div>
+
+              <div>
+                <span>Best</span>
+                <strong id="finalHighScore">0</strong>
+              </div>
+
+            </div>
+
+            <p
+              id="newHighScoreMessage"
+              class="new-record hidden"
+            >
+              New High Score!
+            </p>
+
+            <button id="restartButton">
+              Play Again
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <footer class="bottom-bar">
+
+        <span>
+          Catch the falling modaks
+        </span>
+
+        <span class="control-pill">
+          ← &nbsp; MOVE &nbsp; →
+        </span>
+
+      </footer>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
