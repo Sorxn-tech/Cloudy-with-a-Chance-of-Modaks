@@ -398,7 +398,7 @@ function catchModak(modak) {
   if (
     score % 5 === 0
   ) {
-    const audio = new Audio('collect.mp3');
+    const audio = new Audio('audio/collect.mp3');
     audio.play();
   }
 
@@ -418,7 +418,7 @@ function missModak(modak) {
     return;
   }
 
-  const audio = new Audio('woosh.mp3');
+  const audio = new Audio('audio/woosh.mp3');
   audio.play();
   modak.remove();
 
